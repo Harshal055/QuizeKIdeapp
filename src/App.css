@@ -1,0 +1,92 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* Theme Styles */
+:root {
+  --bg-primary: #ffffff;
+  --text-primary: #333333;
+  --btn-primary: #3b82f6;
+  --accent-color: #60a5fa;
+}
+
+.theme-light {
+  --bg-primary: #ffffff;
+  --text-primary: #333333;
+  --btn-primary: #3b82f6;
+  --accent-color: #60a5fa;
+}
+
+.theme-dark {
+  --bg-primary: #1f2937;
+  --text-primary: #e5e7eb;
+  --btn-primary: #4b5563;
+  --accent-color: #6b7280;
+}
+
+.theme-blue {
+  --bg-primary: #f0f9ff;
+  --text-primary: #0c4a6e;
+  --btn-primary: #0284c7;
+  --accent-color: #38bdf8;
+}
+
+.theme-green {
+  --bg-primary: #f0fdf4;
+  --text-primary: #166534;
+  --btn-primary: #16a34a;
+  --accent-color: #4ade80;
+}
+
+/* Theme transition */
+.theme-transition {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Apply theme variables to buttons and UI elements */
+.bg-blue-600 {
+  background-color: var(--btn-primary, #3b82f6);
+}
+
+.text-blue-500 {
+  color: var(--accent-color, #60a5fa);
+}
